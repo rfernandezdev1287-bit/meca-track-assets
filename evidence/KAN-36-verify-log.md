@@ -1,9 +1,9 @@
 # 🏛️ Reporte de Evidencia QA - Sello Gold Concedido
 
 * **Ticket Asociado:** KAN-36
-* **Fecha de Ejecución:** Wed May 20 00:48:19 CST 2026
+* **Fecha de Ejecución:** Wed May 20 01:00:35 CST 2026
 * **Rama Git:** mecatrack_version_3
-* **Commit Hash:** 5be7ba2016d5255247a58e4f8f9cec89f6291018
+* **Commit Hash:** 0b8cd062c5fc22aa3eb3d438bb09f7e3742cac98
 
 ---
 
@@ -28,26 +28,26 @@ El Centinela Biónico ha verificado con rigor absoluto todas las fases del pipel
 stdout | src/test/auth.test.ts
 ◇ injected env (4) from .env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
 
- ✓ src/test/auth.test.ts (16 tests) 1810ms
-     ✓ [KAN-20.11] hash() produces a different string from input  355ms
-     ✓ [KAN-20.12] compare() returns true for matching password  712ms
-     ✓ [KAN-20.13] compare() returns false for wrong password  711ms
+ ✓ src/test/auth.test.ts (16 tests) 1807ms
+     ✓ [KAN-20.11] hash() produces a different string from input  357ms
+     ✓ [KAN-20.12] compare() returns true for matching password  708ms
+     ✓ [KAN-20.13] compare() returns false for wrong password  710ms
 stdout | src/test/auth.spec.ts
-◇ injected env (4) from .env // tip: ⌘ enable debugging { debug: true }
+◇ injected env (4) from .env // tip: ⌁ auth for agents [www.vestauth.com]
 
- ✓ src/test/auth.spec.ts (12 tests) 1177ms
-     ✓ [KAN-36.1] POST /api/auth/register - creates tenant atomically (Plan, Org, User, Workshop)  394ms
-     ✓ [KAN-35.1] POST /api/auth/reset-password/confirm - updates password and marks token used  365ms
-     ✓ [KAN-35.4] POST /api/auth/reset-password/confirm - invalidates all active tokens for same user atomically  370ms
+ ✓ src/test/auth.spec.ts (12 tests) 1172ms
+     ✓ [KAN-33.1] POST /api/auth/register - creates tenant atomically (Plan, Org, User, Workshop)  396ms
+     ✓ [KAN-35.1] POST /api/auth/reset-password/confirm - updates password and marks token used  364ms
+     ✓ [KAN-35.4] POST /api/auth/reset-password/confirm - invalidates all active tokens for same user atomically  366ms
 stdout | src/test/audit.test.ts
-◇ injected env (4) from .env // tip: ⌘ enable debugging { debug: true }
+◇ injected env (4) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
 
- ✓ src/test/audit.test.ts (4 tests) 32ms
+ ✓ src/test/audit.test.ts (4 tests) 37ms
 
  Test Files  3 passed (3)
       Tests  32 passed (32)
-   Start at  00:47:43
-   Duration  4.37s (transform 108ms, setup 54ms, import 960ms, tests 3.02s, environment 0ms)
+   Start at  01:00:00
+   Duration  4.53s (transform 110ms, setup 49ms, import 1.13s, tests 3.02s, environment 0ms)
 ```
 
 ### 2. Pruebas de Frontend (Vitest)
@@ -55,14 +55,14 @@ stdout | src/test/audit.test.ts
 
  RUN  v4.1.6 /Users/raulfernandezmontero/Documents/projects/meca-track/mecatrack-front
 
- ✓ src/shared/utils/__tests__/parseBackendError.test.ts (5 tests) 3ms
- ✓ src/shared/hooks/__tests__/useDebounce.test.ts (2 tests) 15ms
- ✓ src/shared/contexts/__tests__/NotificationProvider.test.tsx (2 tests) 91ms
+ ✓ src/shared/utils/__tests__/parseBackendError.test.ts (5 tests) 2ms
+ ✓ src/shared/hooks/__tests__/useDebounce.test.ts (2 tests) 16ms
+ ✓ src/shared/contexts/__tests__/NotificationProvider.test.tsx (2 tests) 89ms
 
  Test Files  3 passed (3)
       Tests  9 passed (9)
-   Start at  00:47:48
-   Duration  1.85s (transform 130ms, setup 0ms, import 1.03s, tests 109ms, environment 2.61s)
+   Start at  01:00:05
+   Duration  1.77s (transform 133ms, setup 0ms, import 1.06s, tests 107ms, environment 2.34s)
 ```
 
 ---
